@@ -1,7 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Sécurisée</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+    <div id="login-container">
+        <h2>Connexion</h2>
+        <form id="login-form">
+            <label for="username">Nom d'utilisateur :</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Se connecter</button>
+            <p id="error-message"></p>
+        </form>
+    </div>
+    <div id="content" style="display:none;">
+        <h1>Bienvenue, Theo Balducci!</h1>
+        <p>Contenu sécurisé de la page.</p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
